@@ -113,10 +113,11 @@ th {
 
 /*IMAGEN*/
 .imagen {
-  width: 75%;
+  width: 100%;
   grid-row: 1;
   grid-column: 1;
   align-self: center;
+  margin: auto;
 }
 
 .imagen:hover {
@@ -151,6 +152,7 @@ th {
   color: white;
   font-weight: bold;
   padding: 1px;
+  font-size: large;
 }
 
 .textoDark {
@@ -171,11 +173,8 @@ th {
 /*GRID*/
 #padreGrid {
   display: grid;
-  grid-template-areas:
-    "producto1 producto2 producto3"
-    "producto4 producto5 producto6"
-    "producto7 producto8 producto9";
-  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
   grid-column-gap: 5px;
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 5px;
@@ -237,6 +236,7 @@ th {
     rgba(0, 0, 0, 1) 50%,
     rgba(4, 12, 87, 1) 100%
   );
+  margin-top: 4rem;
   padding-bottom: 1rem;
   font-weight: bold;
   color: white;
@@ -257,15 +257,7 @@ th {
   stroke: white;
   stroke-width: 1;
 }
-.iconos {
-  display: flex;
-}
-.contenedorIconos {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 0.2rem;
-}
+
 .col {
   display: block;
   margin-left: auto;
@@ -276,6 +268,10 @@ th {
 }
 .textFooter {
   padding-top: 0.5rem;
+  color: white;
+  font-weight: bold;
+  padding: 1px;
+  font-size: large;
 }
 
 /*FIN FOOTER*/
@@ -286,6 +282,12 @@ th {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .padreFlex {
+    flex-direction: column;
+  }
+}
+
 .padreFlex div img {
   display: block;
   height: 80%;
@@ -305,6 +307,7 @@ th {
 .imagenServ {
   width: 80%;
   border-radius: 1rem;
+  margin-top: 2rem;
 }
 
 .boton {
@@ -317,9 +320,8 @@ th {
   background-color: #4caf50;
   border: none;
   border-radius: 1rem;
-  margin: 0 auto;
+  margin: 2rem auto 2rem;
   display: block;
-  margin-top: 0.5rem;
 }
 .selectStyle {
   padding: 15px 15px;

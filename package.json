@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Aplicacion de sass al proyecto",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasgatica1995/RetrogamesBSySass.git"
+  },
+  "author": "Elias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasgatica1995/RetrogamesBSySass/issues"
+  },
+  "homepage": "https://github.com/eliasgatica1995/RetrogamesBSySass#readme"
+}
