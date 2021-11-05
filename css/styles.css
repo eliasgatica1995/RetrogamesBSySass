@@ -169,7 +169,15 @@ th {
   grid-column: 1;
   align-self: center;
 }
-
+.textoNosotros {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0.2rem;
+  align-self: center;
+}
 /*GRID*/
 #padreGrid {
   display: grid;
