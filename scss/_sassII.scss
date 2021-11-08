@@ -1,0 +1,58 @@
+@import "colores";
+/*TEXTO*/
+/* SASS - SEGUNDA PARTE*/
+.text {
+  color: $blanco;
+  font-weight: bold;
+  text-align: center;
+}
+.texto {
+  @extend .text;
+  font-size: large;
+  margin-top: 20px;
+  padding: 1px;
+}
+
+.textoDark {
+  @extend .text;
+  font-size: 20px;
+  margin: 0;
+  background-color: $transparente;
+  padding: 0.2rem;
+  opacity: 0;
+  grid-row: 1;
+  grid-column: 1;
+  align-self: center;
+}
+.textoNosotros {
+  @extend .text;
+  font-size: 20px;
+  margin: 0;
+  padding: 0.2rem;
+  align-self: center;
+}
+.textoTituloPag {
+  @extend .text;
+  margin: 0;
+  padding: 0.2rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+.Img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ImgLandingPage {
+  @extend .Img;
+  width: 70%;
+}
+.ImgNosotros {
+  @extend .Img;
+  width: 56%;
+}
+@for $i from 1 through 9 {
+  .contenedor#{$i} {
+    grid-area: producto#{$i};
+  }
+}

@@ -1,0 +1,67 @@
+/* SASS - ANIDAMIENTOS*/
+
+.column {
+  flex: 75%;
+  padding: 5px;
+  img {
+    justify-content: center;
+  }
+}
+
+.padreFlex {
+  display: flex;
+  justify-content: center;
+
+  div img {
+    display: block;
+    height: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+}
+#padreGrid {
+  /*GRID*/
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  grid-column-gap: 5px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 5px;
+  margin-bottom: 1rem;
+  div {
+    font-size: 14px;
+    padding: 2px;
+    div img {
+      object-fit: cover;
+      display: block;
+      height: 100%;
+      width: 100%;
+      display: block;
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+    }
+  }
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+
+  path,
+  polygon,
+  rect {
+    fill: white;
+  }
+
+  circle {
+    stroke: white;
+    stroke-width: 1;
+  }
+}
+/* FIN SASS - ANIDAMIENTOS*/
