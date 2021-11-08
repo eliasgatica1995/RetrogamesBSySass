@@ -41,7 +41,8 @@ header {
 }
 
 .colorlabel {
-  color: #c50d0d;
+  color: $blanco;
+  font-weight: bold;
 }
 .elementoFijo {
   position: fixed;
