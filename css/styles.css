@@ -178,6 +178,16 @@ th {
   padding: 0.2rem;
   align-self: center;
 }
+.textoTituloPag {
+  color: white;
+
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0.2rem;
+  align-self: center;
+  margin-top: 1rem;
+}
 /*GRID*/
 #padreGrid {
   display: grid;
@@ -315,7 +325,7 @@ th {
 .imagenServ {
   width: 80%;
   border-radius: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .boton {
