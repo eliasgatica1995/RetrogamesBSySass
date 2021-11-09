@@ -13,7 +13,7 @@ textarea {
 }
 
 body {
-  background: linear-gradient(to bottom, #593ed3, #c1cefe);
+  background: linear-gradient(to bottom, #593ed3, #322277);
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
 }
@@ -26,6 +26,14 @@ header {
 
 .espaciado {
   margin-top: 0.5rem;
+}
+
+.espaciadoTop {
+  margin-top: 5rem;
+}
+
+.espaciadoBot {
+  margin-bottom: 3rem;
 }
 
 .separadorBot {
@@ -149,20 +157,6 @@ header {
   margin-top: 1rem;
 }
 
-.boton {
-  padding: 15px 15px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #4caf50;
-  border: none;
-  border-radius: 1rem;
-  margin: 2rem auto 2rem;
-  display: block;
-}
-
 .selectStyle {
   padding: 15px 15px;
   font-size: 18px;
@@ -177,11 +171,11 @@ header {
   display: block;
 }
 
-.boton:hover {
+.boton:hover, .botonTienda:hover {
   background-color: #3e8e41;
 }
 
-.boton:active {
+.boton:active, .botonTienda:active {
   background-color: #3e8e41;
   transform: translateY(4px);
 }
@@ -190,6 +184,10 @@ header {
   width: 50%;
   margin: 0 auto;
   padding-top: 0.2rem;
+}
+
+.imagenNosotros {
+  width: 20%;
 }
 
 /*FIN SERVICIOS*/
@@ -218,34 +216,33 @@ header {
 
 /* SASS - ANIDAMIENTOS*/
 .column {
-  flex: 75%;
+  flex: 100%;
   padding: 5px;
 }
 .column img {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .padreFlex {
   display: flex;
-  justify-content: center;
 }
 .padreFlex div img {
   display: block;
-  height: 80%;
-  width: 80%;
+  height: 75%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 #padreGrid {
   /*GRID*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
-  grid-column-gap: 5px;
+  grid-column-gap: 1px;
   grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 5px;
+  grid-row-gap: 1px;
   margin-bottom: 1rem;
 }
 #padreGrid div {
@@ -293,6 +290,10 @@ header {
   margin-top: 20px;
   padding: 1px;
   font-weight: bold;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .textoDark {
@@ -311,6 +312,11 @@ header {
   margin: 0;
   padding: 0.2rem;
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2rem;
+  margin-bottom: 3rem;
+  font-weight: bolder;
 }
 
 .textoTituloPag {
@@ -368,6 +374,24 @@ header {
 
 .contenedor9 {
   grid-area: producto9;
+}
+
+.boton, .botonTienda {
+  padding: 15px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem auto 2rem;
+  display: block;
+}
+
+.botonTienda {
+  margin: 1rem auto 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */

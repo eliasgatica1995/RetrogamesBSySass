@@ -21,6 +21,12 @@ header {
 .espaciado {
   margin-top: 0.5rem;
 }
+.espaciadoTop {
+  margin-top: 5rem;
+}
+.espaciadoBot {
+  margin-bottom: 3rem;
+}
 .separadorBot {
   margin-bottom: 0.5rem;
 }
@@ -139,19 +145,6 @@ header {
   margin-top: 1rem;
 }
 
-.boton {
-  padding: 15px 15px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #4caf50;
-  border: none;
-  border-radius: 1rem;
-  margin: 2rem auto 2rem;
-  display: block;
-}
 .selectStyle {
   padding: 15px 15px;
   font-size: 18px;
@@ -178,6 +171,9 @@ header {
   margin: 0 auto;
 
   padding-top: 0.2rem;
+}
+.imagenNosotros {
+  width: 20%;
 }
 /*FIN SERVICIOS*/
 .estiloItemNav {

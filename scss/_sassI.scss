@@ -1,25 +1,23 @@
 /* SASS - ANIDAMIENTOS*/
 
 .column {
-  flex: 75%;
+  flex: 100%;
   padding: 5px;
   img {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
 .padreFlex {
   display: flex;
-  justify-content: center;
-
   div img {
     display: block;
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
   }
 }
 #padreGrid {
@@ -28,9 +26,9 @@
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
-  grid-column-gap: 5px;
+  grid-column-gap: 1px;
   grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 5px;
+  grid-row-gap: 1px;
   margin-bottom: 1rem;
   div {
     font-size: 14px;

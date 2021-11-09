@@ -12,6 +12,10 @@
   margin-top: 20px;
   padding: 1px;
   font-weight: bold;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .textoDark {
@@ -31,6 +35,11 @@
   margin: 0;
   padding: 0.2rem;
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2rem;
+  margin-bottom: 3rem;
+  font-weight: bolder;
 }
 .textoTituloPag {
   @extend .text;
@@ -56,4 +65,21 @@
   .contenedor#{$i} {
     grid-area: producto#{$i};
   }
+}
+.boton {
+  padding: 15px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem auto 2rem;
+  display: block;
+}
+.botonTienda {
+  @extend .boton;
+  margin: 1rem auto 0rem;
 }
