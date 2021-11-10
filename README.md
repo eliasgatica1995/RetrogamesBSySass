@@ -1,6 +1,6 @@
 # Retrogames
 
-Una página dedicada a la compra venta online de consolas de videojuego, ya sean actuales o antiguas.
+Una página dedicada a la compra y venta online de consolas de videojuegos, ya sean actuales o antiguas.
 
 
 <img src="./img/screenshot.png">
